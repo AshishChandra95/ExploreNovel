@@ -19,7 +19,7 @@ const Login = () => {
 
         try {
             // Send POST request to login
-            const response = await axios.post("http://localhost:4000/users/login", userInfo);
+            const response = await axios.post("https://explore-novel.vercel.app/users/login", userInfo);
             
             if (response.data) {
                 toast.success("Login Successfully");
