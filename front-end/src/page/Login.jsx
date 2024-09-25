@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const Login = () => {
+    const navigate = useNavigate(); // Hook to programmatically navigate
     const {
         register,
         handleSubmit,
@@ -25,11 +26,11 @@ const Login = () => {
                 toast.success("Login Successfully");
                 console.log(response.data);
                 
-                setTimeout(()=>{
-                    document.getElementById("my_modal_3").close()
+                setTimeout(() => {
+                    document.getElementById("my_modal_3").close();
                     localStorage.setItem("Users", JSON.stringify(response.data.users));
                     window.location.reload();
-                },2000)
+                }, 2000);
             }
         } catch (error) {
             if (error.response) {
@@ -90,7 +91,14 @@ const Login = () => {
                             </button>
                             <p>
                                 Not registered?{" "}
-                                <Link to="/signup" className="underline text-blue-500 cursor-pointer">
+                                <Link
+                                    to="/signup"
+                                    className="underline text-blue-500 cursor-pointer"
+                                    onClick={() => {
+                                        document.getElementById("my_modal_3").close(); // Close the login modal
+                                        navigate('/signup'); // Navigate to signup page
+                                    }}
+                                >
                                     Signup
                                 </Link>
                             </p>
