@@ -46,7 +46,7 @@ const Books = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        let data = await fetch('https://explore-novel.vercel.app/book');
+        let data = await fetch('https://explorenovel.onrender.com/book');
         let response = await data.json();
         setBook(response);
       } catch (error) {

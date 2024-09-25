@@ -23,7 +23,7 @@ const Signup = () => {
             email: data.email,
             password: data.password
         };
-        await axios.post("https://explore-novel.vercel.app/users/signup",userInfo)
+        await axios.post("https://explorenovel.onrender.com/users/signup",userInfo)
         .then((res)=>{
             console.log(res.data);
             if(res.data){
