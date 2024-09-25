@@ -1,0 +1,30 @@
+[
+    {
+        "id" : 1,
+        "name" : "Romance Novel",
+        "price" : 0,
+        "category" : "free",
+        "image" :"https://thedailyaztec.com/wp-content/uploads/2022/02/romance-books-900x675.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "Fantasy",
+        "price" : 0,
+        "category" : "free",
+        "image" :"https://offtheshelf.b-cdn.net/app/uploads/2019/11/Historical-Romance-List_feat.jpg"
+    },
+    {
+        "id" : 3,
+        "name" : "Mystery",
+        "price" : 0,
+        "category" : "free",
+        "image" :"https://celadonbooks.com/wp-content/uploads/2024/04/Feature-Photo-13-Unputdownable-Small-Town-Mysteries-and-Thrillers.jpg"
+    },
+    {
+        "id" : 4,
+        "name" : "Horror",
+        "price" : 0,
+        "category" : "free",
+        "image" :"https://wp.penguin.co.uk/wp-content/uploads/2019/10/Inline20Image_horror-reading_list.jpg"
+    }
+]
