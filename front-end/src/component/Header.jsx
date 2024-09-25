@@ -61,11 +61,6 @@ const Header = () => {
                         </ul>
                     </div>
                     {/* Logo */}
-<<<<<<< HEAD
-                    <Link  className="btn btn-ghost normal-case text-xl cursor-pointer">NovelExplorer</Link>
-=======
-                    <Link  className="btn btn-ghost normal-case text-xl cursor-pointer">NovelExplore</Link>
->>>>>>> a28034d5892d2930bf281e5a0be906eedb95d739
                 </div>
 
                 {/* Centered navbar for large screens */}
