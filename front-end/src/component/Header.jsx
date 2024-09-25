@@ -61,6 +61,8 @@ const Header = () => {
                         </ul>
                     </div>
                     {/* Logo */}
+                    <a className="btn btn-ghost text-xl">NovelExplore</a>
+
                 </div>
 
                 {/* Centered navbar for large screens */}
